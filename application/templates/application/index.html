@@ -1,0 +1,12 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Minimal Django React Webpack Babel Setup</title>
+  </head>
+  <body>
+    <div id="app">{{ rendered | safe }}</div>
+  </body>
+  <script src="{% static 'application/js/dist/bundle.js' %}"></script>
+</html>

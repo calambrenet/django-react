@@ -1,0 +1,38 @@
+{
+  "name": "djangoreact_boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "watch": "webpack --watch --mode production & forever --watch --watchDirectory ./application/static/application/js/dist ./render_server.js"
+  },
+  "keywords": [],
+  "author": "@calambrenet",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "forever": "^0.15.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-hot-loader": "^4.6.3",
+    "react-render": "^3.0.0",
+    "require": "^2.4.20",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  }
+}
